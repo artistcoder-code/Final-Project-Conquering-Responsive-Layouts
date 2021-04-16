@@ -15,6 +15,7 @@
 
     /* Fonts Size */
     --fs-bold: 5.626rem; /* 90px */
+    --fs-pre-bold: 3.5rem; /*50px*/ 
     --fs-medium: 2.25rem; /* 36px */
     --fs-pre-medium: 1.875rem; /* 30px */
     --fs-regular: 1.5rem; /* 24px */
@@ -176,7 +177,7 @@ header {
     padding: 100px 0;
 }
 .section-dark--title h1 {
-    font-size: var(--fs-bold);
+    font-size: var(--fs-pre-bold);
     color: var(--clr-white);
     line-height: 1;
     margin-top: 0;
@@ -190,7 +191,7 @@ header {
 
 .section-dark--paragraph {
     font-family: var(--ff-montserrat);
-    font-size: var(--fs-regular);
+    font-size: var(--fs--pre-regular);
     margin-top: 3em;
     line-height: 1.4;
     width: 80%;
@@ -209,8 +210,8 @@ header {
     border-radius: 100px;
     border-style: none;
     outline: none;
-    padding: .75em 2em;
-    margin-top: 1em;
+    padding: .35em 1em;
+    margin-top: .75em;
    
 }
 
@@ -374,7 +375,19 @@ footer {
 /* Media min-width:700px */
 
  @media (min-width: 700px) {
+    
+     .section-dark--title h1 {
+        font-size: var(--fs-bold);
+    }
 
+    .section-dark--paragraph {
+        font-size: var(--fs--regular);
+    }
+     
+    .btn {
+        padding: .75em 2em;
+        margin-top: 1em;
+    }
 
     .main {
         display: block;
@@ -464,7 +477,15 @@ footer {
     .section-light {
         text-align: center;
     }
-
+    
+     .section-light h3 {
+        margin: 0;
+    }
+     
+    .section-light p {
+        padding: 1em;
+        margin: 0; 
+    }
 
     .section-large-leftside {
         width: 62%;
