@@ -233,6 +233,7 @@ header {
     font-size: var(--fs-pre-medium);
     font-family: var(--ff-oswald);
     margin-top: 0;
+    margin-bottom: 0;
    
 }
 
@@ -240,6 +241,8 @@ header {
     font-size: var(--fs-normal);
     font-family: var(--ff-montserrat);
     color: var(--clr-white);
+    margin-top: 0;
+    line-height: 1.4;
 
 }
 
